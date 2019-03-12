@@ -11,9 +11,9 @@ class Layout extends React.Component {
       <div className="[ container ]">
           <div className="[ row ]">
             <div className="[ col-sm-12 ]">
-              <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Test Application</a>
-              </nav>
+				<div className='[ header ]'>
+					<img src="https://www.freeiconspng.com/uploads/rick-and-morty-beige-folder-icon-1.png" alt="Rick and Morty"/>
+				</div>
             </div>
           </div>
           <div className="[ row ]">

@@ -11,7 +11,7 @@ import {
 
 import App from './components/App/App.jsx';
 //import Layout from './components/Layout/Layout.jsx';
-import Homepage from './pages/homepage/homepage';
+import Homepage from './pages/homepage/Homepage';
 
 const routes = (
     <HashRouter>
