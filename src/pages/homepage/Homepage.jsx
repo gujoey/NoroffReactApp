@@ -36,13 +36,15 @@ export default class Homepage extends React.Component{
 		
 		rickMortyArray.forEach((value, key)=>{
 			app.state.rickMortyCards.push(
-				<CharacterComponent image={value.image}
+				<CharacterComponent 
+					image={value.image}
 					name={value.name}
 					species={value.species}
 					gender={value.gender}
 					status={value.status}
 					location={value.location.name}
 					origin={value.origin.name}
+					id={value.id}
 					key={key}
 				>
 				</CharacterComponent>
