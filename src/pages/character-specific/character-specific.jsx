@@ -4,11 +4,10 @@ import CharacterSpecificComponent from './../../components/character-specific-co
 
 export default class CharacterSpecific extends React.Component{
 	constructor(props){
-		super(props){
-			this.state={
-				rickMortyObj:[],
-				characterId: this.props.match.params.id
-			}
+		super(props);
+		this.state={
+			rickMortyObj:[],
+			characterId: this.props.match.params.id
 		}
 	}
 	
@@ -37,7 +36,8 @@ export default class CharacterSpecific extends React.Component{
 		const app = this;
 		let specificCharacter = <CharacterSpecificComponent image={app.state.rickMortyObj.image}
 															name={app.state.rickMortyObj.name}
-															species={app.state.rickMortyObj.species}>
+															species={app.state.rickMortyObj.species}
+															gender={app.state.rickMortyObj.gender}>
 								</CharacterSpecificComponent>;
 		
 		return(
