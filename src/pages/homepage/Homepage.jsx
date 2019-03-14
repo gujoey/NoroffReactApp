@@ -10,6 +10,8 @@ export default class Homepage extends React.Component {
         super(props);
         this.state = {
             rickMortyObj: [],
+			rickMortySerachObj: [],
+			rickMortySearch: false,
             rickMortyCards: []
         }
         this.getData = this.getData.bind(this);
@@ -37,20 +39,30 @@ export default class Homepage extends React.Component {
     handleSearchTerm(searchTerm) {
         const app = this;
         let characterObj = app.state.rickMortyObj;
-
+		
         let characters = characterObj.filter((character) => {
             return character.name.indexOf(searchTerm) !== -1;
         });
-
+		
         app.setState({
             rickMortyCards: [],
-            rickMortyObj: characters
+			rickMortySerachObj: characters,
+			rickMortySearch: true
         },app.createCards());
     }
 
     createCards(){
         const app = this;
-        let rickMortyArray = app.state.rickMortyObj;
+
+		let rickMortyArray;
+		let search = app.state.rickMortySearch;
+		
+		if(!search){
+			rickMortyArray = app.state.rickMortyObj;
+		}else{
+			rickMortyArray = app.state.rickMortySerachObj;
+		}
+		
         rickMortyArray.forEach((value, key) => {
             app.state.rickMortyCards.push(
                 <CharacterComponent image={value.image}
@@ -66,6 +78,7 @@ export default class Homepage extends React.Component {
                 </CharacterComponent>
             );
         });
+		
     }
 
     render() {
