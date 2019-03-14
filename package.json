@@ -1,10 +1,10 @@
 {
-  "name": "new-react-project",
+  "name": "rick-and-morty-app",
   "private": false,
   "version": "0.1.0",
-  "description": "project-description",
+  "description": "app that displays the character from the popular tv show Rick and Morty",
   "keywords": [
-    "new-react-project"
+    "Rick and Morty"
   ],
   "dependencies": {
     "cross-env": "^5.1.3",
@@ -33,7 +33,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/YOUR_USERNAME/PROJECT_NAME.git"
+    "url": "https://github.com/gujoey/NoroffReactApp"
   },
   "author": "Øyvind Gujord",
   "license": "MIT",
@@ -60,7 +60,7 @@
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.22.0",
     "json-loader": "^0.5.4",
-    "node-sass": "^4.11.0",
+    "node-sass": "^3.4.2",
     "precss": "^1.4.0",
     "react-addons-test-utils": "^15.0.1",
     "react-hot-loader": "^1.3.0",
