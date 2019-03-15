@@ -1,4 +1,25 @@
 body{
-	//background-image: linear-gradient(to bottom right, $turquoise, $limegreen, $limegreen);
 	background-color: $turquoise;
+}
+
+h1{
+	font-family: $h1Font;
+	font-size: 4em;
+}
+h2{
+	font-family: $h2Font;
+	font-size: 3em;
+}
+h3{
+	font-family: $h3Font;
+	font-size: 2em;
+}
+
+p{
+	font-family: $pFont;
+	font-size: 1.3em;
+}
+
+input{
+	font-family: $inputFont;
 }

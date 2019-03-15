@@ -87,9 +87,9 @@ export default class Homepage extends React.Component {
         return (
             <div className="[ row ]">
                 <div className="[ col-sm-12 ]">
-                    <h2>
-                        Home Page
-                    </h2>
+                    <h1 className='[ text-center ]'>
+                        Rick and Morty characters
+                    </h1><br/>
                 </div>
                 <div className="[ col-sm-12 ]">
                     <Search onSearchTerm={app.handleSearchTerm}></Search>
