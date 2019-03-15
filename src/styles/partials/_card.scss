@@ -1,10 +1,21 @@
 .card{
-	border: 1px solid black;
+	background-image: linear-gradient(to bottom right, $limegreen, $turquoise, $limegreen);
 	border-radius: 4px;
 	padding: 20px;
 	margin-top: 30px;
+	text-align: center;
+	@include boxShaddow(0px, 0px, 12px, 0px, $blackTrans);
+	
+	&:hover{
+		background-image: linear-gradient(to bottom right, $turquoise, $limegreen, $turquoise);
+	}
 	
 	img{
 		width: 100%;
+	}
+	
+	a{
+		color: $black;
+		text-decoration: none;
 	}
 }
